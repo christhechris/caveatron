@@ -279,13 +279,14 @@ void Caveatron_Hardware::LRF_PowerOn()
 {
 	digitalWrite(LRFPowerPin, HIGH);
 	delay(100);
-	switch(lrfType) {
-		case '1':
-		case '2':
-			digitalWrite(LRFOnPin, HIGH);
-			delay(400);
-			digitalWrite(LRFOnPin, LOW);
-			break;
+	switch (lrfType)
+	{
+	case '1':
+	case '2':
+		digitalWrite(LRFOnPin, HIGH);
+		delay(1000);
+		digitalWrite(LRFOnPin, LOW);
+		break;
 	}
 }
 
